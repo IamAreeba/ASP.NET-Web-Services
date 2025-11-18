@@ -9,7 +9,7 @@ namespace WebServices
     /// <summary>
     /// Summary description for WebServiceDemo
     /// </summary>
-    [WebService(Namespace = "http://tempuri.org/")]
+    [WebService(Namespace = "http://demotech.com/webservices")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
@@ -18,9 +18,9 @@ namespace WebServices
     {
 
         [WebMethod]
-        public string HelloWorld()
+        public int Add(int firstNumber, int secondNumber)
         {
-            return "Hello World";
+            return firstNumber + secondNumber;
         }
     }
 }

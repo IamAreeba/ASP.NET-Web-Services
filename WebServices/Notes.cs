@@ -13,7 +13,7 @@
    . We dont have to develop this req, res manually we will develop proxy classes which is going to do all the hard work for us 
    . We will see consuming a web service from a client app 
    .  To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line.
-      // [System.Web.Script.Services.ScriptService]
+      // [System.Web.Script.Services.ScriptService
    . We will also see how to invoke a web service using asp.net ajax
    . WSDL doc formely define a web service
    . It contain all the methods that are exposed by a web service
