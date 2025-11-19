@@ -39,3 +39,17 @@
 
  */
 
+// ========================================= 03:  Sessions & Web service ========================================
+/*
+   Object: Using ASP NET Session State in a Web Service
+    . Now here we want the history so we are using session
+    . We have did made the function not we have to invoke it in our client application
+    . We have a problem we were not getting the calculations cuz our web app is not passing the same session ID so we have to
+      make add cookies to true in web.config file
+    
+ */
+
+
+
+
+

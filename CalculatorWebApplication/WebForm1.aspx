@@ -43,6 +43,12 @@
                 </td>
             </tr>
 
+            <tr>
+                <td colspan="2">
+                    <asp:GridView ID="gvCalculations" runat="server"></asp:GridView>
+                </td>
+            </tr>
+
         </table>
     </form>
 </body>
