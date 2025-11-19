@@ -48,10 +48,12 @@
   </wsdl:message>
   <wsdl:portType name="WebServiceDemoSoap">
     <wsdl:operation name="Add">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method adds 2 numbers</wsdl:documentation>
       <wsdl:input message="tns:AddSoapIn" />
       <wsdl:output message="tns:AddSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="GetCalculations">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Reurn all the resent transactions</wsdl:documentation>
       <wsdl:input message="tns:GetCalculationsSoapIn" />
       <wsdl:output message="tns:GetCalculationsSoapOut" />
     </wsdl:operation>

@@ -17,7 +17,7 @@ namespace WebServices
     public class WebServiceDemo : System.Web.Services.WebService
     {
 
-        [WebMethod(EnableSession = true)]
+        [WebMethod(EnableSession = true, Description = "This method adds 2 numbers", CacheDuration = 20)]
         public int Add(int firstNumber, int secondNumber)
         {
             List<string> calculations;
@@ -41,7 +41,7 @@ namespace WebServices
             return firstNumber + secondNumber;
         }
 
-        [WebMethod(EnableSession = true)]
+        [WebMethod(EnableSession = true, Description = "Reurn all the resent transactions")]
         // This method return all the recent calculations which user performed
         public List<string> GetCalculations()
         {
