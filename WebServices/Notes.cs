@@ -23,3 +23,19 @@
 
  */
 
+
+// =========================================== 02: Consuming a web service ============================================
+/*
+   Object: Consuming a web service from a client application
+    . So we have added the service reference in our web app of another class and our web app got that proxy class so he use that 
+    . So our client app will now communicate with that proxy class and that proxy class is going to invoke that web service method
+    . Visual Studio uses the WSDL to create a proxy class for us.
+    . The client app calls the method of the proxy class (not the web service directly).
+    . The proxy class converts the parameters into SOAP and sends the request to the web service.
+    . The web service runs the method and sends back a SOAP response.
+    . The proxy class converts the SOAP response back into normal .NET objects.
+    . The client app then receives the normal result.
+    . Developers don’t need to manually handle serialization or deserialization — the proxy does all the work.
+
+ */
+
