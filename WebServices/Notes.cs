@@ -57,6 +57,18 @@
     
  */
 
+// ========================================= 05: Web Method Overloading ========================================
+/*
+   Object: Overloading Web Methods in ASP.NET Web Services
+    . If we dont specify message Naame property of WebMethod attribute then by default the name of the method is going to be message Name so web services use same message name for both of the services and we will get error cuz our service doesn't know how to uniquely identify them so we want the message name of that 
+    . We use methodName property to overload the function
+    . But we will still get error cuz Visual studio makes the WsiProfiles to BasicProfile1_1 we have to make it none
+    . This is a Interview Question can we overload Web Method ?
+    . Yes by using message name property
+    
+ */
+
+
 
 
 

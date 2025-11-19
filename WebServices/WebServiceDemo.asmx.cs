@@ -10,7 +10,7 @@ namespace WebServices
     /// Summary description for WebServiceDemo
     /// </summary>
     [WebService(Namespace = "http://demotech.com/webservices")]
-    [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
+    [WebServiceBinding(ConformsTo = WsiProfiles.None)]
     [System.ComponentModel.ToolboxItem(false)]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
     // [System.Web.Script.Services.ScriptService] 
@@ -40,6 +40,33 @@ namespace WebServices
 
             return firstNumber + secondNumber;
         }
+
+
+        [WebMethod(EnableSession = true, MessageName = "Add3numbers")]
+        public int Add(int firstNumber, int secondNumber, int thirdNumber)
+        {
+            List<string> calculations;
+
+            if (Session["CALCULATIONS"] == null)
+            {
+                calculations = new List<string>();
+            }
+            else
+            {
+                calculations = (List<string>)Session["CALCULATIONS"];
+            }
+
+            string strRecentCalculations =
+                " " + firstNumber.ToString() + " + " + secondNumber.ToString() + " + " + thirdNumber.ToString() + " = "
+                + (firstNumber + secondNumber).ToString() + " ";
+
+            calculations.Add(strRecentCalculations);
+            Session["CALCULATIONS"] = calculations;
+
+            return firstNumber + secondNumber + thirdNumber;
+        }
+
+
 
         [WebMethod(EnableSession = true, Description = "Reurn all the resent transactions")]
         // This method return all the recent calculations which user performed
