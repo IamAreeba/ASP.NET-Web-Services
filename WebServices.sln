@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorWebApplication", 
 		{A4B5316D-23A5-4DF4-B7A2-22185E7C1AAE} = {A4B5316D-23A5-4DF4-B7A2-22185E7C1AAE}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentInfoService", "StudentInfoService\StudentInfoService.csproj", "{82831AB1-ACD7-410D-9F7A-065C1510DEAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 		{AD7BC65C-D221-4AE5-AB18-E93193604A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD7BC65C-D221-4AE5-AB18-E93193604A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD7BC65C-D221-4AE5-AB18-E93193604A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82831AB1-ACD7-410D-9F7A-065C1510DEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82831AB1-ACD7-410D-9F7A-065C1510DEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82831AB1-ACD7-410D-9F7A-065C1510DEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82831AB1-ACD7-410D-9F7A-065C1510DEAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

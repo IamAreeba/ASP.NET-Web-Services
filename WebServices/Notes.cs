@@ -70,7 +70,16 @@
 
 
 
-
+// ========================================= 06: Calling web service using AJAX ========================================
+/*
+   Object: Calling asp.net web service method from JavaScript using asp.net ajax
+    . In this project i will write id e.g. 1 and then my web app will call a web service which will give me all data related to that Id and in this we want to call the web service from JS using ajax 
+    . We have to make a sp which info of student by Id
+    . We have to make a student class which encapsulates the student info
+    . We dont want to post back when click on btn so for that we can use HTML btn
+    . With the help of this btn we are doing a partial page postback
+    
+ */
 
 
 
